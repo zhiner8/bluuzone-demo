@@ -25,7 +25,7 @@ const HeroSection = () => {
           </p>
           <a
             href="#shop"
-            className="inline-block mt-8 bg-roseda hover:bg-ebony font-oxygenlight  px-7 py-4 rounded-lg font-semibold transition duration-300"
+            className="inline-block mt-8 bg-roseda hover:bg-bark font-oxygenlight  px-7 py-4 rounded-lg font-semibold transition duration-300"
           >
             Shop Now
           </a>

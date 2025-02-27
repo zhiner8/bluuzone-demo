@@ -78,7 +78,7 @@ const NavBar = () => {
           className={`hidden md:block font-oxygenlight px-6 py-3 rounded-lg font-semibold transition duration-300 ${
             isInverted
               ? "bg-bone text-roseda hover:bg-dun"
-              : "bg-roseda text-white hover:bg-ebony"
+              : "bg-roseda text-white hover:bg-bark"
           }`}
         >
           Shop Now
