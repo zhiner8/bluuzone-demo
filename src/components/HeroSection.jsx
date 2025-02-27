@@ -18,9 +18,7 @@ const HeroSection = () => {
       {/* Center the content */}
       <div className="flex justify-center mt-48 text-white mx-80">
         <div className="z-10 text-center">
-          <h1 className="text-8xl font-bold font-breathdemo ">
-            Hydration Without Harm.
-          </h1>
+          <h1 className="text-8xl font-breathdemo ">Hydration Without Harm.</h1>
           <p className="text-2xl font-oxygenlight mt-4 ">
             A 100% plastic free disposable water bottle made from mycelium
             biocomposite
