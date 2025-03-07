@@ -1,5 +1,6 @@
 import React from "react";
 import heroVideo from "../assets/scenic-forest.mp4";
+import logo from "../assets/Bluuzone New Logo png.png";
 
 const HeroSection = () => {
   return (

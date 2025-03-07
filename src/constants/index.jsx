@@ -1,6 +1,11 @@
 import bottle from "../assets/placeholder-bottle.jpg";
 import bottle2 from "../assets/placeholder-bottle2.webp";
 import bottle3 from "../assets/placeholder-bottle3.webp";
+import robbie from "../assets/Robbie Ballentine.avif";
+import allison from "../assets/Allison Pine.avif";
+import ryan from "../assets/Ryan Desantis.avif";
+import julia from "../assets/Julia Babun.avif";
+import gursimran from "../assets/Gursimran Grewal.avif";
 
 export const products = [
   {
@@ -34,4 +39,36 @@ export const platformLinks = [
 
 export const communityLinks = [
   { href: "#", text: "Email: bluuzonebottles@gmail.com" },
+];
+export const team = [
+  {
+    name: "Allison Pine",
+    position: "Founder & CEO", // Example position
+    image: allison,
+    linkedin: "https://www.linkedin.com/in/allison-pine1/",
+  },
+  {
+    name: "Robbie Ballentine",
+    position: "CPO", // Example position
+    image: robbie,
+    linkedin: "https://www.linkedin.com/in/robert-ballentine08/",
+  },
+  {
+    name: "Julia Babun",
+    position: "CMO", // Example position
+    image: julia,
+    linkedin: "https://www.linkedin.com/in/julia-babun/",
+  },
+  {
+    name: "Ryan Desantis",
+    position: "CTO", // Example position
+    image: ryan,
+    linkedin: "https://www.linkedin.com/in/ryan-desantis-24b46330b/",
+  },
+  {
+    name: "Gursimran Grewal",
+    position: "COO", // Example position
+    image: gursimran,
+    linkedin: "https://www.linkedin.com/in/grewalgs/",
+  },
 ];

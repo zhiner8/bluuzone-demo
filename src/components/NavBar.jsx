@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/Bluuzone New Logo png.png";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isInverted, setIsInverted] = useState(false);
@@ -50,9 +51,9 @@ const NavBar = () => {
         <div className="flex items-center space-x-6">
           <ul className="hidden md:flex px-4 font-oxygenlight text-2xl space-x-12 tracking-wide">
             <li>
-              <a className="hover:text-bark" href="#">
+              <Link className="hover:text-bark" to="/home">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a className="hover:text-bark" href="#mission">
@@ -65,9 +66,9 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-              <a className="hover:text-bark" href="#">
+              <Link className="hover:text-bark" to="/about">
                 About Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
