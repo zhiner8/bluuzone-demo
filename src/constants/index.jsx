@@ -43,28 +43,17 @@ export const communityLinks = [
 export const team = [
   {
     name: "Allison Pine",
-    position: "Founder & CEO", // Example position
+    position: "CEO", // Example position
     image: allison,
     linkedin: "https://www.linkedin.com/in/allison-pine1/",
   },
   {
-    name: "Robbie Ballentine",
-    position: "CPO", // Example position
+    name: "Robert Ballentine",
+    position: "CRO", // Example position
     image: robbie,
     linkedin: "https://www.linkedin.com/in/robert-ballentine08/",
   },
-  {
-    name: "Julia Babun",
-    position: "CMO", // Example position
-    image: julia,
-    linkedin: "https://www.linkedin.com/in/julia-babun/",
-  },
-  {
-    name: "Ryan Desantis",
-    position: "CTO", // Example position
-    image: ryan,
-    linkedin: "https://www.linkedin.com/in/ryan-desantis-24b46330b/",
-  },
+
   {
     name: "Gursimran Grewal",
     position: "COO", // Example position

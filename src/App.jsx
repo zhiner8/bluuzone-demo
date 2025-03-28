@@ -9,6 +9,8 @@ import Section from "./components/Section";
 import AboutNavBar from "./components/AboutNavBar";
 import ScrollToTop from "./components/ScrollToTop";
 import MeetTheTeam from "./components/MeetTheTeam";
+import Shop from "./components/Shop";
+import MissionPage from "./components/MissionPage";
 function App() {
   return (
     <>
@@ -36,6 +38,26 @@ function App() {
               <NavBar />
               <AboutNavBar />
               <MeetTheTeam />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/shop"
+          element={
+            <>
+              <NavBar />
+              <Shop />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/missionPage"
+          element={
+            <>
+              <NavBar />
+              <MissionPage />
               <Footer />
             </>
           }
