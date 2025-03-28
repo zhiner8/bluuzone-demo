@@ -13,7 +13,7 @@ const Ingredients = () => {
 
       {/* Centered Text Container */}
       <div className="relative text-white h-full flex justify-center items-center px-8 md:mt-0 mt-10">
-        <div className="text-sm md:w-3/5 text-center font-oxygenlight md:text-xl mt-10 leading-relaxed">
+        <div className="text-md md:w-3/5 text-center font-oxygenlight md:text-xl mt-10 leading-relaxed">
           In a single plastic water bottle, there can be up to 120,000 pieces of
           micro and nano plastics. These harmful particles leach into our
           drinking water, leading to serious health issues like infertility,
