@@ -4,13 +4,13 @@ import linkedinIcon from "../assets/linkedin-icon.png"; // Import LinkedIn icon
 
 const MeetTheTeam = () => {
   return (
-    <div className="h-[80vh] bg-bone flex flex-col items-center">
+    <div className="md:h-[80vh] bg-bone flex flex-col items-center">
       <h1 className="font-breathdemo text-roseda text-4xl mt-4 p-12">
         Meet the Team
       </h1>
 
       {/* Single Row (3 people, centered) */}
-      <div className="grid grid-cols-3 gap-28 px-10 mt-24">
+      <div className="grid md:grid-cols-3 gap-28 px-10 mt-24 mb-20">
         {" "}
         {/* Increased margin-top */}
         {team.slice(0, 3).map((member, index) => (
