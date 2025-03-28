@@ -68,7 +68,9 @@ const NavBar = () => {
       }`}
     >
       <div className="flex justify-between items-center mx-10">
-        <img src={logo} alt="Bluuzone Logo" className="h-24 w-auto" />
+        <Link to="/home">
+          <img src={logo} alt="Bluuzone Logo" className="h-24 w-auto" />
+        </Link>
         <div className="flex items-center space-x-6">
           <ul className="md:flex px-4 font-oxygenlight text-2xl space-x-12 tracking-wide">
             <li>
