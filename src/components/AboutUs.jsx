@@ -7,9 +7,9 @@ const AboutUs = () => {
   return (
     <div
       id="about"
-      className="md:h-[70vh] bg-bone overflow-hidden flex flex-col items-center"
+      className="xl:h-[70vh] bg-bone overflow-hidden flex flex-col items-center"
     >
-      <h1 className="text-center mt-20 text-4xl font-breathdemo text-roseda">
+      <h1 className="text-center mt-20 text-4xl font-breathdemo text-roseda md:mx-0 mx-5">
         Why Choose Bluuzone Bottles
         <span className="font-breathdemo font-thin">?</span>
       </h1>
