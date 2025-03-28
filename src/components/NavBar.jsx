@@ -123,8 +123,12 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-30 left-0 w-full bg-bone transition-all duration-300 ${
+        className={`md:hidden absolute top-30 left-0 w-full transition-all duration-300 ${
           isMenuOpen ? "block" : "hidden"
+        } ${
+          isInvertedPage || isInverted
+            ? "bg-roseda text-bone"
+            : "bg-bone text-roseda"
         }`}
       >
         <ul className="flex flex-col items-center space-y-4 py-4 text-2xl font-oxygenlight">
