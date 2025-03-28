@@ -3,7 +3,10 @@ import { products } from "../constants"; // Import the product data
 
 const Mission = () => {
   return (
-    <div id="mission" className="h-[180vh] md:h-[90vh] bg-bone overflow-hidden">
+    <div
+      id="mission"
+      className="min-h-[190vh] md:min-h-[90vh] bg-bone overflow-hidden"
+    >
       {/* Header outside the flex container */}
       <h1 className="text-2xl mt-10 mx-4 md:text-4xl text-center md:mt-20 md:my-20 tracking-wide font-breathdemo text-roseda ">
         Refreshing Hydration for Adventures
