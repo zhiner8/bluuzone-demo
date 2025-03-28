@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="border-t bg-bone border-neutral-700 min-h-[80vh] flex flex-col justify-end">
       <div className="flex justify-center ">
-        <h2 className="text-roseda font-breathdemo text-3xl mb-8">
+        <h2 className="text-roseda font-breathdemo text-3xl mb-8 text-center mt-10 mx-10">
           Exclusive early access to our next product launch – subscribe now!
         </h2>
       </div>
@@ -12,16 +12,16 @@ const Footer = () => {
         <input
           placeholder="Join the list – your email here..."
           type="text"
-          className="font-oxygenlight w-1/3 p-2 text-xl text-roseda border border-roseda rounded-lg"
+          className="font-oxygenlight md:w-1/3 p-2 text-xl text-roseda border border-roseda rounded-lg"
         ></input>
         <button
           type="button"
-          className="ml-4 w-1/6 p-4 rounded-md text-white bg-roseda hover:bg-bark"
+          className="ml-4 md:w-1/6 p-4 rounded-md text-white bg-roseda hover:bg-bark"
         >
           Join
         </button>
       </div>
-      <div className="pt-48 pb-44">
+      <div className="pt-20 pb-20 md:pt-48 md:pb-44">
         <div className="flex flex-wrap justify-center gap-10 md:gap-10 lg:gap-60 mt-4">
           <div>
             <h3 className="text-md text-roseda font-breathdemo font-bold mb-4">
