@@ -7,13 +7,13 @@ const AboutUs = () => {
   return (
     <div
       id="about"
-      className="h-[70vh] bg-bone overflow-hidden flex flex-col items-center"
+      className="md:h-[70vh] bg-bone overflow-hidden flex flex-col items-center"
     >
-      <h1 className="mt-20 text-4xl font-breathdemo text-roseda">
+      <h1 className="text-center mt-20 text-4xl font-breathdemo text-roseda">
         Why Choose Bluuzone Bottles
         <span className="font-breathdemo font-thin">?</span>
       </h1>
-      <div className="flex flex-wrap pt-20 justify-center gap-10 md:gap-10 lg:gap-10">
+      <div className="mx-10 mb-20 flex flex-wrap pt-20 justify-center gap-10 md:gap-10 lg:gap-10">
         <div className="flex flex-col items-center">
           <TentTree color="#ccbfa3" size={190} />
           <h1 className="mt-10 font-bold font-breathdemo text-xl text-roseda">
