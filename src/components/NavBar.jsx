@@ -1,21 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/Bluuzone New Logo png.png";
+import menuIcon from "../assets/menu.png";
 
 const NavBar = () => {
   const location = useLocation(); // Get current route
   const isInvertedPage =
-    location.pathname === "/about" || location.pathname === "/shop"; // Check if on /about or /shop
+    location.pathname === "/about" || location.pathname === "/shop";
 
   const [isInverted, setIsInverted] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   useEffect(() => {
     if (isInvertedPage) {
-      setIsInverted(true); // Force inverted style on About and Shop pages
+      setIsInverted(true);
       return;
     }
     if (location.pathname === "/missionPage") {
-      setIsInverted(false); // Force inverted style on About and Shop pages
+      setIsInverted(false);
       return;
     }
 
@@ -57,7 +61,7 @@ const NavBar = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isInvertedPage]); // Re-run effect when route changes
+  }, [isInvertedPage]);
 
   return (
     <nav
@@ -67,12 +71,20 @@ const NavBar = () => {
           : "bg-bone text-roseda"
       }`}
     >
-      <div className="flex justify-between items-center mx-10">
+      <div className="flex justify-between items-center mx-10 py-4">
+        {/* Logo */}
         <Link to="/home">
           <img src={logo} alt="Bluuzone Logo" className="h-24 w-auto" />
         </Link>
-        <div className="flex items-center space-x-6">
-          <ul className="md:flex px-4 font-oxygenlight text-2xl space-x-12 tracking-wide">
+
+        {/* Mobile Menu Button */}
+        <button onClick={toggleMenu} className="md:hidden focus:outline-none">
+          <img src={menuIcon} alt="Menu" className="h-10 w-10" />
+        </button>
+
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center space-x-6">
+          <ul className="flex px-4 font-oxygenlight text-2xl space-x-12 tracking-wide">
             <li>
               <Link className="hover:text-bark" to="/home">
                 Home
@@ -95,6 +107,8 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
+
+        {/* Shop Now Button */}
         <Link
           to="/shop"
           className={`hidden md:block font-oxygenlight px-6 py-3 rounded-lg font-semibold transition duration-300 ${
@@ -105,6 +119,40 @@ const NavBar = () => {
         >
           Shop Now
         </Link>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden absolute top-30 left-0 w-full bg-bone transition-all duration-300 ${
+          isMenuOpen ? "block" : "hidden"
+        }`}
+      >
+        <ul className="flex flex-col items-center space-y-4 py-4 text-2xl font-oxygenlight">
+          <li>
+            <Link className="hover:text-bark" to="/home" onClick={toggleMenu}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className="hover:text-bark" to="/shop" onClick={toggleMenu}>
+              Shop
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover:text-bark"
+              to="/missionPage"
+              onClick={toggleMenu}
+            >
+              Mission
+            </Link>
+          </li>
+          <li>
+            <Link className="hover:text-bark" to="/about" onClick={toggleMenu}>
+              About Us
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );

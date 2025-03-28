@@ -18,10 +18,10 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black bg-opacity-30"></div>
 
       {/* Center the content */}
-      <div className="flex justify-center mt-12 text-white mx-80">
-        <div className="z-10 text-center">
-          <Link to="/shop">
-            <img src={logo} alt="Bluuzone Logo" className="mx-auto w-3/5" />
+      <div className="flex justify-center text-white h-full">
+        <div className="flex z-10 text-center justify-center items-center">
+          <Link className="flex justify-center" to="/shop">
+            <img src={logo} alt="Bluuzone Logo" className="w-4/5 md:w-2/5" />
           </Link>
           {/*}
           <a
