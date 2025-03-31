@@ -3,10 +3,7 @@ import { products } from "../constants"; // Import the product data
 
 const Mission = () => {
   return (
-    <div
-      id="mission"
-      className="min-h-[180vh] md:min-h-[90vh] bg-bone overflow-hidden"
-    >
+    <div id="mission" className="md:min-h-[90vh] bg-bone overflow-hidden">
       {/* Header outside the flex container */}
       <h1 className="text-2xl mt-10 mx-4 md:text-4xl text-center md:mt-20 md:my-20 tracking-wide font-breathdemo text-roseda ">
         Refreshing Hydration for Adventures
@@ -21,7 +18,7 @@ const Mission = () => {
             <img
               src={product.image}
               alt={`${product.bottleColor} Bottle`}
-              className="flex justify-center object-cover rounded-xl h-80 lg:h-96"
+              className="flex justify-center object-cover rounded-xl h-48 lg:h-96"
             />
             <h2 className="mt-4 text-xl font-bold text-white font-oxygenlight">
               {`${product.bottleColor} Bottle`}
