@@ -2,9 +2,9 @@ import { resourcesLinks, platformLinks, communityLinks } from "../constants";
 import linkedinIcon from "../assets/linkedin-icon.png";
 const Footer = () => {
   return (
-    <footer className="border-t bg-bone border-neutral-700 min-h-[80vh] flex flex-col justify-end">
+    <footer className="border-t bg-bone border-neutral-700 flex flex-col justify-end">
       <div className="flex justify-center ">
-        <h2 className="text-roseda font-breathdemo text-xl md:text-3xl mb-8 text-center mt-10 mx-10">
+        <h2 className="text-roseda font-breathdemo text-xl md:text-3xl mb-8 text-center mt-10 md:mt-32 mx-10">
           Exclusive early access to our next product launch – subscribe now!
         </h2>
       </div>

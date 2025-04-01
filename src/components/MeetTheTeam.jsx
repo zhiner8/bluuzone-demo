@@ -4,7 +4,7 @@ import linkedinIcon from "../assets/linkedin-icon.png"; // Import LinkedIn icon
 
 const MeetTheTeam = () => {
   return (
-    <div className="md:h-[80vh] bg-bone flex flex-col items-center">
+    <div className=" bg-bone flex flex-col items-center">
       <h1 className="font-breathdemo text-roseda text-2xl md:text-4xl mt-4 md:mt-4 md:p-12">
         Meet the Team
       </h1>

@@ -4,13 +4,13 @@ import pretty_forest from "../assets/insert-here.jpg"; // Updated import
 
 const MissionPage = () => {
   return (
-    <div className="bg-bone min-h-[100vh] md:h-[300vh]">
+    <div className="bg-bone">
       {/* Image container */}
       <div className="relative md:h-1/5 flex items-center justify-center">
         <img
           src={forest}
           alt="forest tag"
-          className="h-full w-full object-cover"
+          className="md:h-[60vh] h-full w-full object-cover"
         />
         {/* Centered Text container */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-5 p-6">
@@ -97,7 +97,7 @@ const MissionPage = () => {
           </p>
         </div>
       </div>
-      <div className="flex md:flex-row flex-col items-center justify-center md:mt-36 md:mx-32 md:text-left text-center">
+      <div className="flex md:flex-row flex-col items-center justify-center md:mt-36 md:mx-32 md:text-left text-center ">
         {/* Left: Text content */}
         <div className="md:w-1/2 p-8">
           <h1 className="font-breathdemo text-xl md:text-4xl text-roseda">
@@ -129,7 +129,7 @@ const MissionPage = () => {
           <img
             src={pretty_forest}
             alt="Pretty Forest"
-            className="md:h-[60vh] rounded-xl"
+            className="md:h-[60vh] rounded-xl md:mb-20"
           />
         </div>
       </div>
