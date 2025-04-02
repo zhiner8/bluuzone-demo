@@ -24,9 +24,9 @@ const MissionPage = () => {
       </div>
 
       {/* Mission section with text and image side by side */}
-      <div className="flex flex-col md:flex-row items-center justify-center md:text-left text-center md:mt-36 md:mx-32">
+      <div className="flex flex-col xl:flex-row items-center justify-center md:text-left text-center mt-10 xl:mt-36 md:mx-32">
         {/* Left: Text content */}
-        <div className="md:w-1/2 p-8">
+        <div className="xl:w-1/2 p-8">
           <h1 className="font-breathdemo text-xl md:text-4xl text-roseda">
             Hydration Without Harm
           </h1>
@@ -55,7 +55,7 @@ const MissionPage = () => {
         </div>
 
         {/* Right: Image (pretty-forest instead of bottleImage) */}
-        <div className="md:ml-20 md:w-1/2 w-5/6 flex justify-center">
+        <div className="xl:ml-20 xl:w-1/2 w-5/6 flex justify-center">
           <img
             src={pretty_forest}
             alt="Pretty Forest"
@@ -65,9 +65,9 @@ const MissionPage = () => {
       </div>
 
       {/* Second Section (flipped layout with the image on the left and text on the right) */}
-      <div className="flex flex-col-reverse md:flex-row items-center justify-center md:mt-36 md:mx-32 md:text-left text-center">
+      <div className="flex flex-col-reverse xl:flex-row items-center justify-center mt-10 xl:mt-36 md:mx-32 md:text-left text-center">
         {/* Left: Image (pretty-forest instead of bottleImage) */}
-        <div className="md:mr-20 md:w-1/2 flex justify-center">
+        <div className="xl:mr-20 xl:w-1/2 w-5/6 flex justify-center">
           <img
             src={pretty_forest}
             alt="Pretty Forest"
@@ -76,7 +76,7 @@ const MissionPage = () => {
         </div>
 
         {/* Right: Text content */}
-        <div className="md:w-1/2 p-8">
+        <div className="xl:w-1/2 p-8">
           <h1 className="font-breathdemo text-xl md:text-4xl text-roseda">
             Our Values
           </h1>
@@ -97,9 +97,9 @@ const MissionPage = () => {
           </p>
         </div>
       </div>
-      <div className="flex md:flex-row flex-col items-center justify-center md:mt-36 md:mx-32 md:text-left text-center ">
+      <div className="flex xl:flex-row flex-col items-center justify-center mt-10 xl:mt-36 md:mx-32 md:text-left text-center ">
         {/* Left: Text content */}
-        <div className="md:w-1/2 p-8">
+        <div className="xl:w-1/2 p-8">
           <h1 className="font-breathdemo text-xl md:text-4xl text-roseda">
             Our Impact
           </h1>
@@ -125,11 +125,11 @@ const MissionPage = () => {
         </div>
 
         {/* Right: Image (pretty-forest instead of bottleImage) */}
-        <div className="md:ml-20 md:w-1/2 flex justify-center md:mb-0 mb-10">
+        <div className="xl:ml-20 xl:w-1/2 w-5/6 flex justify-center md:mb-0 mb-10">
           <img
             src={pretty_forest}
             alt="Pretty Forest"
-            className="md:h-[60vh] rounded-xl md:mb-20"
+            className="md:h-[60vh] rounded-xl 2xl:mb-20 mb-10"
           />
         </div>
       </div>
