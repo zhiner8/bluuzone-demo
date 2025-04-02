@@ -9,7 +9,7 @@ const Mission = () => {
         Refreshing Hydration for Adventures
       </h1>
       {/* Flex container for products */}
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 mt-8 mb-10">
+      <div className="flex flex-wrap flex-col lg:flex-row justify-center items-center gap-10 md:gap-20 mt-8 mb-10">
         {products.map((product, index) => (
           <div
             key={index}
@@ -18,7 +18,7 @@ const Mission = () => {
             <img
               src={product.image}
               alt={`${product.bottleColor} Bottle`}
-              className="flex justify-center object-cover rounded-xl h-48 lg:h-96"
+              className="flex justify-center object-cover rounded-xl h-48 md:h-72 2xl:h-96"
             />
             <h2 className="mt-4 text-xl font-bold text-white font-oxygenlight">
               {`${product.bottleColor} Bottle`}
