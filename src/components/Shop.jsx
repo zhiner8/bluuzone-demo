@@ -7,14 +7,14 @@ const Shop = () => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div className="md:h-[110vh] bg-bone flex flex-col items-center">
+    <div className=" bg-bone flex flex-col items-center">
       <h1 className="text-center text-3xl md:text-5xl text-roseda font-breathdemo mt-16">
         You're Drinking Plastic. Choose Bluuzone.
       </h1>
-      <div className="flex flex-col md:flex-row items-center md:justify-start mt-12">
+      <div className="flex flex-col lg:flex-row items-center md:justify-start mt-12 md:mb-20">
         {/* Image container with hover effect */}
         <div
-          className="relative w-11/12 mt-2 md:w-1/2 h-[50vh] md:h-[70vh] rounded-xl md:m-8 overflow-hidden"
+          className="relative w-11/12 mt-2 lg:w-1/2 h-[50vh] md:h-[70vh] rounded-xl md:m-8 overflow-hidden"
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >
@@ -38,7 +38,7 @@ const Shop = () => {
         </div>
 
         {/* Content on the right side */}
-        <div className="md:w-1/2 p-14">
+        <div className="lg:w-1/2 p-14">
           <h1 className="text-3xl md:text-5xl font-breathdemo text-roseda mb-6">
             Bluuzone - Plastic-Free
           </h1>
