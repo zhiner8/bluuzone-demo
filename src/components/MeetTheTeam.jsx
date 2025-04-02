@@ -5,12 +5,12 @@ import linkedinIcon from "../assets/linkedin-icon.png"; // Import LinkedIn icon
 const MeetTheTeam = () => {
   return (
     <div className=" bg-bone flex flex-col items-center">
-      <h1 className="font-breathdemo text-roseda text-2xl md:text-4xl mt-4 md:mt-4 md:p-12">
+      <h1 className="font-breathdemo text-roseda text-2xl md:text-4xl  md:p-12">
         Meet the Team
       </h1>
 
       {/* Single Row (3 people, centered) */}
-      <div className="grid md:grid-cols-3 gap-16 md:gap-28 px-10 mt-12 md:mt-24 mb-20">
+      <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-16 md:gap-28 px-10 mt-12 xl:mt-20 mb-20">
         {" "}
         {/* Increased margin-top */}
         {team.slice(0, 3).map((member, index) => (

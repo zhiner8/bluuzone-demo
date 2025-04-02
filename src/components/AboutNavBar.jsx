@@ -3,18 +3,18 @@ import trees from "../assets/pretty-forest.jpg";
 
 const AboutNavBar = () => {
   return (
-    <div className="relative bg-bone md:h-[100vh] overflow-hidden">
+    <div className="relative bg-bone overflow-hidden">
       {/* Flex container for image and content */}
-      <div className="flex flex-col md:flex-row items-center justify-start w-full h-full">
+      <div className="flex flex-col xl:flex-row items-center justify-start w-full h-full">
         {/* Image on the left side */}
         <img
-          className="w-full h-[30vh] md:w-1/2 md:h-[90vh] object-cover md:rounded-xl md:m-8 "
+          className="w-full h-[30vh] xl:w-1/2 xl:h-[90vh] object-cover xl:rounded-xl xl:m-8 "
           src={trees}
           alt="Trees background"
         />
 
         {/* Content on the right side */}
-        <div className="text-center p-4 mt-4 mx-8 md:w-1/2 md:p-14 md:text-left">
+        <div className="text-center p-4 mt-4 mx-8 xl:w-1/2 md:p-14 xl:text-left">
           <h1 className="text-2xl md:text-3xl font-breathdemo text-roseda mb-4">
             About Bluuzone Bottles
           </h1>
