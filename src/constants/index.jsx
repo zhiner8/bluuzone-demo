@@ -1,7 +1,7 @@
 import bottle from "../assets/placeholder-bottle.jpg";
 import bottle2 from "../assets/placeholder-bottle2.webp";
 import bottle3 from "../assets/placeholder-bottle3.webp";
-import robbie from "../assets/Robbie Ballentine.avif";
+import robbie from "../assets/wubbie.jpg";
 import allison from "../assets/Allison Pine.avif";
 import ryan from "../assets/Ryan Desantis.avif";
 import julia from "../assets/Julia Babun.avif";
