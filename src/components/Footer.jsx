@@ -1,6 +1,49 @@
 import { resourcesLinks, platformLinks, communityLinks } from "../constants";
 import linkedinIcon from "../assets/linkedin-icon.png";
+import React, { useState } from "react";
+
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false); // <-- new
+
+  const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  const handleSubmit = async () => {
+    if (!email) {
+      alert("Please enter an email!");
+      return;
+    }
+
+    if (!isValidEmail(email)) {
+      alert("Please enter a valid email address!");
+      return;
+    }
+
+    setLoading(true); // <-- new
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbwV1TD6I3HydYaOrBoPBUqtrNBkw6BPNSDpuVRDCYCi73WIzQtpA83Km54tlh4EvbMC/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: `email=${encodeURIComponent(email)}`,
+        }
+      );
+
+      alert("Thanks for joining!");
+      setEmail("");
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong.");
+    } finally {
+      setLoading(false); // <-- new
+    }
+  };
+
   return (
     <footer className="border-t bg-bone border-neutral-700 flex flex-col justify-end">
       <div className="flex justify-center ">
@@ -11,14 +54,22 @@ const Footer = () => {
       <div className="flex justify-center ">
         <input
           placeholder="Join the list – your email here..."
-          type="text"
-          className="font-oxygenlight w-2/3 md:w-1/3 p-2 text-sm md:text-xl text-roseda border border-roseda rounded-lg"
-        ></input>
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="font-oxygenlight w-2/3 md:w-1/3 p-2 text-sm md:text-xl text-roseda border border-roseda rounded-lg focus:outline-none"
+        />
         <button
           type="button"
-          className="ml-4 md:w-1/6 p-4 text-sm rounded-md text-white bg-roseda hover:bg-bark"
+          onClick={handleSubmit}
+          disabled={loading} // <-- new
+          className={`ml-4 md:w-1/6 p-4 text-sm md:text-base rounded-md text-white transition-all ${
+            loading
+              ? "bg-gray-400 cursor-not-allowed"
+              : "bg-roseda hover:bg-bark"
+          }`}
         >
-          Join
+          {loading ? "Joining..." : "Join"} {/* <-- new */}
         </button>
       </div>
       <div className="pt-20 pb-20 md:pt-48 md:pb-44">
