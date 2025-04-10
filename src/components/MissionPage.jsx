@@ -1,6 +1,11 @@
 import React from "react";
 import forest from "../assets/forestmission.jpg"; // Original forest image
 import pretty_forest from "../assets/insert-here.jpg"; // Updated import
+import bottle from "../assets/bottle_on_ground.png";
+import mountains from "../assets/mountains_bluuzone.jpg";
+import austria from "../assets/austria_forest.jpg";
+import garbage from "../assets/garbage.jpg";
+import lake from "../assets/lake.jpg";
 
 const MissionPage = () => {
   return (
@@ -56,11 +61,7 @@ const MissionPage = () => {
 
         {/* Right: Image (pretty-forest instead of bottleImage) */}
         <div className="xl:ml-20 xl:w-1/2 w-5/6 flex justify-center">
-          <img
-            src={pretty_forest}
-            alt="Pretty Forest"
-            className="md:h-[60vh] rounded-xl"
-          />
+          <img src={lake} alt="mountains" className="md:h-[60vh] rounded-xl" />
         </div>
       </div>
 
@@ -69,7 +70,7 @@ const MissionPage = () => {
         {/* Left: Image (pretty-forest instead of bottleImage) */}
         <div className="xl:mr-20 xl:w-1/2 w-5/6 flex justify-center">
           <img
-            src={pretty_forest}
+            src={austria}
             alt="Pretty Forest"
             className="md:h-[60vh] rounded-xl"
           />
@@ -127,7 +128,7 @@ const MissionPage = () => {
         {/* Right: Image (pretty-forest instead of bottleImage) */}
         <div className="xl:ml-20 xl:w-1/2 w-5/6 flex justify-center md:mb-0 mb-10">
           <img
-            src={pretty_forest}
+            src={garbage}
             alt="Pretty Forest"
             className="md:h-[60vh] rounded-xl 2xl:mb-20 mb-10"
           />
