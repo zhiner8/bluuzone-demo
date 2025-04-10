@@ -11,6 +11,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import MeetTheTeam from "./components/MeetTheTeam";
 import Shop from "./components/Shop";
 import MissionPage from "./components/MissionPage";
+import Endorsement from "./components/Endorsement";
+
 function App() {
   return (
     <>

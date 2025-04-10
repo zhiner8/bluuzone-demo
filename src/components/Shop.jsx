@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import here from "../assets/pretty-forest.jpg";
 import test from "../assets/insert-here-test-trans.jpg";
+import bottle from "../assets/wider_bottle_with_bg.png";
+import flower from "../assets/flower_bottle.png";
 
 const Shop = () => {
   const [quantity, setQuantity] = useState(1);
@@ -23,7 +25,7 @@ const Shop = () => {
             className={`absolute top-0 left-0 w-full h-full object-cover rounded-xl transition-opacity duration-500 ${
               hovered ? "opacity-0" : "opacity-100"
             }`}
-            src={here}
+            src={bottle}
             alt="product"
           />
 
@@ -32,7 +34,7 @@ const Shop = () => {
             className={`absolute top-0 left-0 w-full h-full object-cover rounded-xl transition-opacity duration-500 ${
               hovered ? "opacity-100" : "opacity-0"
             }`}
-            src={test}
+            src={flower}
             alt="product-hover"
           />
         </div>
@@ -59,7 +61,7 @@ const Shop = () => {
             <li>No microplastics, no harmful chemicals</li>
           </ul>
 
-          {/* Dropdown for selecting quantity */}
+          {/* Dropdown for selecting quantity 
           <div className="mb-6">
             <label
               htmlFor="quantity"
@@ -79,13 +81,14 @@ const Shop = () => {
               <option value="4">4 Packs</option>
             </select>
           </div>
+          */}
 
           {/* Add to Cart Button */}
           <button
             type="button"
-            className="p-4 w-full bg-roseda text-base md:text-xl hover:bg-bark text-white font-oxygenlight rounded-xl"
+            className="mt-4 p-4 w-full bg-roseda text-base md:text-xl hover:bg-bark text-white font-oxygenlight rounded-xl"
           >
-            Add to Cart - ${(19.99 * quantity).toFixed(2)}
+            Coming Soon - Reserve Your Spot
           </button>
         </div>
       </div>
