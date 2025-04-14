@@ -12,6 +12,11 @@ import MeetTheTeam from "./components/MeetTheTeam";
 import Shop from "./components/Shop";
 import MissionPage from "./components/MissionPage";
 import Endorsement from "./components/Endorsement";
+import Endorsementv2 from "./components/Endorsementv2";
+import Endorsementv3 from "./components/Endorsementv3";
+import Endorsementv4 from "./components/Endorsementv4";
+import OnlyEndorsements from "./components/OnlyEndorsements";
+import HydrationWithoutHarm from "./components/HydrationWithoutHarm";
 
 function App() {
   return (
@@ -25,7 +30,9 @@ function App() {
             <>
               <NavBar />
               <HeroSection />
-              <Mission />
+              <HydrationWithoutHarm />
+              <Endorsementv4 />
+              <OnlyEndorsements />
               <Ingredients />
               <AboutUs />
               <Section />

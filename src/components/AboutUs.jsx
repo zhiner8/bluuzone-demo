@@ -10,7 +10,7 @@ const AboutUs = () => {
       className=" bg-bone overflow-hidden flex flex-col items-center"
     >
       <h1 className="text-center mt-20 text-4xl font-breathdemo text-roseda md:mx-0 mx-5">
-        Why Choose Bluuzone Bottles
+        Why Choose Bluuzone
         <span className="font-breathdemo font-thin">?</span>
       </h1>
       <div className="mx-10 mb-20 flex flex-wrap pt-20 justify-center gap-10 md:gap-10 lg:gap-10">
@@ -42,9 +42,8 @@ const AboutUs = () => {
             Revolutionizing Hydration
           </h1>
           <p className="text-sage mt-4 text-lg text-center font-oxygenlight max-w-[400px]">
-            Bluuzone Bottles offer a healthier, plastic-free alternative to
-            traditional water bottles, leading the way toward a cleaner,
-            sustainable future.
+            Bluuzone offers a healthier, plastic-free alternative to traditional
+            water bottles, leading the way toward a cleaner, sustainable future.
           </p>
         </div>
       </div>

@@ -9,9 +9,12 @@ import lake from "../assets/lake.jpg";
 
 const MissionPage = () => {
   return (
-    <div className="bg-bone">
+    <div className="bg-bone pb-8 md:pb-16 xl:pb-24">
       {/* Image container */}
-      <div className="relative md:h-1/5 flex items-center justify-center">
+      <div
+        id="mission-hero"
+        className="relative md:h-1/5 flex items-center justify-center"
+      >
         <img
           src={forest}
           alt="forest tag"
@@ -23,13 +26,16 @@ const MissionPage = () => {
             Our Mission
           </h1>
           <p className="px-10 md:p-0 mt-4 text-base md:text-2xl font-breathdemo">
-            Bluuzone Bottles' mission, values, and fundamental principles
+            Bluuzone's mission, values, and fundamental principles
           </p>
         </div>
       </div>
 
       {/* Mission section with text and image side by side */}
-      <div className="flex flex-col xl:flex-row items-center justify-center md:text-left text-center mt-10 xl:mt-36 md:mx-32">
+      <div
+        id="mission-content"
+        className="flex flex-col xl:flex-row items-center justify-center md:text-left text-center mt-10 xl:mt-36 md:mx-32"
+      >
         {/* Left: Text content */}
         <div className="xl:w-1/2 p-8">
           <h1 className="font-breathdemo text-xl md:text-4xl text-roseda">
@@ -126,11 +132,11 @@ const MissionPage = () => {
         </div>
 
         {/* Right: Image (pretty-forest instead of bottleImage) */}
-        <div className="xl:ml-20 xl:w-1/2 w-5/6 flex justify-center md:mb-0 mb-10">
+        <div className="xl:ml-20 xl:w-1/2 w-5/6 flex justify-center">
           <img
             src={garbage}
             alt="Pretty Forest"
-            className="md:h-[60vh] rounded-xl 2xl:mb-20 mb-10"
+            className="md:h-[60vh] rounded-xl flex"
           />
         </div>
       </div>

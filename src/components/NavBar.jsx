@@ -18,14 +18,23 @@ const NavBar = () => {
       setIsInverted(true);
       return;
     }
-    if (location.pathname === "/missionPage") {
-      setIsInverted(false);
-      return;
-    }
 
     const handleScroll = () => {
+      const navbarHeight = document.querySelector("nav")?.offsetHeight || 0;
+
+      if (location.pathname === "/missionPage") {
+        const missionHero = document.getElementById("mission-hero");
+        if (!missionHero) return;
+
+        const heroBottom =
+          missionHero.getBoundingClientRect().bottom - navbarHeight;
+        setIsInverted(heroBottom <= 0); // Invert navbar once hero is out of view
+        return;
+      }
+
+      // Existing homepage scroll logic
       const heroSection = document.getElementById("hero");
-      const missionSection = document.getElementById("mission");
+      const missionSection = document.getElementById("endorsements");
       const ingredientsSection = document.getElementById("ingredients");
       const aboutSection = document.getElementById("about");
 
@@ -36,9 +45,6 @@ const NavBar = () => {
         !aboutSection
       )
         return;
-
-      const navbar = document.querySelector("nav");
-      const navbarHeight = navbar?.offsetHeight || 0;
 
       const heroBottom =
         heroSection.getBoundingClientRect().bottom - navbarHeight;
@@ -61,7 +67,7 @@ const NavBar = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isInvertedPage]);
+  }, [isInvertedPage, location.pathname]);
 
   return (
     <nav

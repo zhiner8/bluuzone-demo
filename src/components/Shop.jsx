@@ -84,12 +84,14 @@ const Shop = () => {
           */}
 
           {/* Add to Cart Button */}
-          <button
-            type="button"
-            className="mt-4 p-4 w-full bg-roseda text-base md:text-xl hover:bg-bark text-white font-oxygenlight rounded-xl"
-          >
-            Coming Soon - Reserve Your Spot
-          </button>
+          <a href="#footer">
+            <button
+              type="button"
+              className="mt-4 p-4 w-full bg-roseda text-base md:text-xl hover:bg-bark text-white font-oxygenlight rounded-xl"
+            >
+              Coming Soon - Reserve Your Spot
+            </button>
+          </a>
         </div>
       </div>
     </div>
