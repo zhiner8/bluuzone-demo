@@ -21,7 +21,7 @@ const endorsements = [
 const OnlyEndorsements = () => {
   return (
     <div className="border border-gray-500 bg-bone">
-      <h1 className="text-roseda font-breathdemo flex justify-center pt-8 text-2xl lg:text-4xl pb-4">
+      <h1 className="text-roseda font-breathdemo flex justify-center pt-8 text-2xl xl:text-4xl pb-4">
         Endorsed By:
       </h1>
       <div className="flex flex-wrap justify-center gap-16 m-6">
@@ -36,7 +36,7 @@ const OnlyEndorsements = () => {
             <img
               src={item.img}
               alt={`endorsement-${index}`}
-              className="w-28 lg:w-32 h-auto object-contain"
+              className="w-28 xl:w-32 h-auto object-contain"
             />
           </a>
         ))}
