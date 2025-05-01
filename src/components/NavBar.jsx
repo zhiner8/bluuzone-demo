@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/Bluuzone New Logo png.png";
 import menuIcon from "../assets/menu.png";
+import closeIcon from "../assets/close.png";
 
 const NavBar = () => {
   const location = useLocation(); // Get current route
@@ -85,7 +86,11 @@ const NavBar = () => {
 
         {/* Mobile Menu Button */}
         <button onClick={toggleMenu} className="md:hidden focus:outline-none">
-          <img src={menuIcon} alt="Menu" className="h-10 w-10" />
+          <img
+            src={isMenuOpen ? closeIcon : menuIcon}
+            alt={isMenuOpen ? "Close" : "Menu"}
+            className="h-10 w-10"
+          />
         </button>
 
         {/* Desktop Nav */}

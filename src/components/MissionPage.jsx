@@ -1,8 +1,5 @@
 import React from "react";
 import forest from "../assets/forestmission.jpg"; // Original forest image
-import pretty_forest from "../assets/insert-here.jpg"; // Updated import
-import bottle from "../assets/bottle_on_ground.png";
-import mountains from "../assets/mountains_bluuzone.jpg";
 import austria from "../assets/austria_forest.jpg";
 import garbage from "../assets/garbage.jpg";
 import lake from "../assets/lake.jpg";

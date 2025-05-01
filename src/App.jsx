@@ -1,7 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
-import Mission from "./components/Mission";
 import Ingredients from "./components/Ingredients";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
@@ -11,9 +10,6 @@ import ScrollToTop from "./components/ScrollToTop";
 import MeetTheTeam from "./components/MeetTheTeam";
 import Shop from "./components/Shop";
 import MissionPage from "./components/MissionPage";
-import Endorsement from "./components/Endorsement";
-import Endorsementv2 from "./components/Endorsementv2";
-import Endorsementv3 from "./components/Endorsementv3";
 import Endorsementv4 from "./components/Endorsementv4";
 import OnlyEndorsements from "./components/OnlyEndorsements";
 import HydrationWithoutHarm from "./components/HydrationWithoutHarm";

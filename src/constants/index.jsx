@@ -1,29 +1,7 @@
-import bottle from "../assets/placeholder-bottle.jpg";
-import bottle2 from "../assets/placeholder-bottle2.webp";
-import bottle3 from "../assets/placeholder-bottle3.webp";
 import robbie from "../assets/wubbie.jpg";
 import allison from "../assets/Allison Pine.avif";
-import ryan from "../assets/Ryan Desantis.avif";
-import julia from "../assets/Julia Babun.avif";
 import gursimran from "../assets/Gursimran Grewal.avif";
 
-export const products = [
-  {
-    bottleColor: "Black",
-    price: "$20",
-    image: bottle,
-  },
-  {
-    bottleColor: "Blue",
-    price: "$20",
-    image: bottle2,
-  },
-  {
-    bottleColor: "White",
-    price: "$20",
-    image: bottle3,
-  },
-];
 export const resourcesLinks = [
   { href: "#", text: "All Products" },
   { href: "#", text: "New" },

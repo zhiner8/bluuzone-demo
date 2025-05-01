@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import here from "../assets/pretty-forest.jpg";
-import test from "../assets/insert-here-test-trans.jpg";
 import bottle from "../assets/wider_bottle_with_bg.png";
 import flower from "../assets/flower_bottle.png";
 
